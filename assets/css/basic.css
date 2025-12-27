@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
+
+:root {
+    --primary-gray: #F7F7F7;
+    --primary-light-purple: #EEEFFB;
+    --primary-light-purple-2: #F2F0FF;
+    --primary-line-light-purple: #E7E6EF;
+    --primary-pink: #FB2E86;
+
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.text-pink {
+    color: var(--primary-pink);
+}
+
+.bg-pink {
+    background-color: var(--primary-pink);
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+align-items-start {
+    display: flex;
+    align-items: start;
+
+}
