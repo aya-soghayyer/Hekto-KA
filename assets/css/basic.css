@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playpen+Sans+Arabic:wght@100..800&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playpen+Sans+Arabic:wght@100..800&display=swap');
 
 :root {
@@ -8,6 +7,7 @@
     --primary-line-light-purple: #E7E6EF;
     --primary-pink: #FB2E86;
     --primary-mid-gray: #8A8FB9;
+    --primary-level-black:  #0D0E43;
 }
 
 .capitalize {
@@ -19,15 +19,22 @@
     /* align-items: stretch; */
 }
 
-.col {
+/* .col {
     display: flexbox;
     justify-content: space-between;
     margin: 50px;
 
-}
+} */
 
+.text-black{
+    color: var(--primary-level-black)
+}
 .text-pink {
     color: var(--primary-pink);
+}
+
+.text-gray {
+    color: var(--primary-mid-gray)
 }
 
 .bg-pink {
@@ -40,12 +47,26 @@
     font-style: normal;
 }
 
-.josefin-sans-bold {
+.lato-bold-600 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.josefin-sans-bold-600 {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
 }
+
+.josefin-sans-bold-400 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .align-items-start {
     display: flex;

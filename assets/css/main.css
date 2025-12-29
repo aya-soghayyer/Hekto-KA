@@ -11,7 +11,7 @@ ul {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-level-black);
 }
 
 .container {
@@ -86,52 +86,10 @@ i {
     display: none;
 }
 
-@media screen and (min-width:0) and (max-width:650px) {
-
-    .nav .search-form,
-    .nav .list {
-        display: none;
-    }
-
-    svg {
-        display: block;
-        /* visibility: visible; */
-        margin: auto;
-    }
-
-    i {
-        display: block;
-    }
-
-    footer .left-footer,
-    footer .right-footer {
-        width: 100%;
-    }
-
-    footer .row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer .left-footer .address {
-        font-size: 12px
-    }
-
-    footer .container {
-        padding: 0 70px;
-    }
-
-    .nav .container {
-        margin: auto;
-        padding: 0 100px;
-        gap: 70px;
-    }
-
-}
+/* ========================= footer section ================================= */
 
 footer {
     background-color: var(--primary-light-purple);
-    margin-top: 90px;
     padding: 50px 0;
 }
 
@@ -194,4 +152,135 @@ footer .search-form {
 
 footer .row {
     gap: 50px;
+}
+
+/* ========================= hero section ================================= */
+
+hero {
+    width: 100%;
+}
+
+.hero .container{
+background-color: var(--primary-light-purple-2);
+width: 100%;
+padding-top: 140px;
+padding-bottom: 180px; 
+margin: auto;
+}
+
+.hero .row{
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .left-hero button{
+    border: none;
+    padding: 16px 30px;
+    color: white;
+    border-radius: 2px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.hero .left-hero{
+    width: calc((100% - 100px)/2);
+}
+
+.hero .left-hero p:not(.main-sentence) {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.hero .left-hero .main-sentence {
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.hero .right-hero {
+    width: calc((100% - 100px)/2);
+}
+
+.hero .right-hero img{
+    width: 120%;
+    height: 120%;
+}
+
+
+
+
+/* ========================= media query section ================================= */
+
+@media screen and (min-width:0) and (max-width:650px) {
+
+    .nav .search-form,
+    .nav .list {
+        display: none;
+    }
+
+    svg {
+        display: block;
+        margin: auto;
+    }
+
+    i {
+        display: block;
+    }
+
+    footer .left-footer,
+    footer .right-footer {
+        width: 100%;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .left-footer .address {
+        font-size: 12px
+    }
+
+    footer .container {
+        padding: 0 70px;
+    }
+
+    .nav .container {
+        margin: auto;
+        padding: 0 100px;
+        gap: 70px;
+    }
+
+    .hero .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero .right-hero img{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .hero .container{
+        padding-top: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .hero .left-hero,
+    .hero .right-hero {
+        width: 100%;
+    }
+
+    .hero .left-hero button {
+        width: 100%;
+    }
+
+    .hero .row{
+        gap: 50px;
+    }
+
+   
 }
