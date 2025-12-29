@@ -18,7 +18,7 @@ li a {
     width: 100%;
     margin: auto;
     max-width: 1400px;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 /* end public style */
@@ -46,9 +46,7 @@ li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 88px;
-
-
+    gap: 80px;
 }
 
 .nav input {
@@ -64,27 +62,31 @@ li a {
 
 .nav form {
     display: flex;
-
 }
 
 .right-side {
     display: flex;
-    gap: 227px;
+    gap: 165px;
     align-items: center;
 }
 
 .nav .list a:hover {
     text-decoration: underline;
     background-color: var(--primary-light-purple);
+    padding: 10px 0px;
+    transition: padding 1s;
+    border-radius: 5px;
 }
 
 svg {
-    /* visibility: hidden; */
-    /* display: none; */
     display: none;
 }
 
-@media screen and (min-width:0) and (max-width:600px) {
+i {
+    display: none;
+}
+
+@media screen and (min-width:0) and (max-width:650px) {
 
     .nav .search-form,
     .nav .list {
@@ -93,9 +95,103 @@ svg {
 
     svg {
         display: block;
+        /* visibility: visible; */
+        margin: auto;
     }
+
+    i {
+        display: block;
+    }
+
+    footer .left-footer,
+    footer .right-footer {
+        width: 100%;
+    }
+
+    footer .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .left-footer .address {
+        font-size: 12px
+    }
+
+    footer .container {
+        padding: 0 70px;
+    }
+
+    .nav .container {
+        margin: auto;
+        padding: 0 100px;
+        gap: 70px;
+    }
+
 }
 
-/* p {
-    padding: 100px 0;
-} */
+footer {
+    background-color: var(--primary-light-purple);
+    margin-top: 90px;
+    padding: 50px 0;
+}
+
+footer form {
+    display: flex;
+}
+
+footer input {
+    border: none;
+    border-radius: 3px 0px 0px 3px;
+    padding: 10px 20px;
+    opacity: 45%;
+}
+
+footer button {
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 0px 3px 3px 0px;
+    color: white;
+}
+
+footer .address {
+    color: var(--primary-mid-gray);
+    font-size: 16px;
+}
+
+footer input::placeholder {
+    color: var(--primary-mid-gray);
+}
+
+footer .right-footer {
+    width: calc(60%);
+}
+
+footer .footer-item a:not(.main) {
+    color: var(--primary-mid-gray);
+    font-size: 16px;
+    line-height: 45px;
+}
+
+footer .main {
+    font-size: 22px;
+    line-height: 70px;
+}
+
+footer .left-footer {
+    width: calc(40%);
+    line-height: 35px;
+}
+
+footer .logo {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+footer .search-form {
+    margin-bottom: 20px;
+}
+
+footer .row {
+    gap: 50px;
+}
