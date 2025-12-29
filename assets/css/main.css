@@ -160,20 +160,20 @@ hero {
     width: 100%;
 }
 
-.hero .container{
-background-color: var(--primary-light-purple-2);
-width: 100%;
-padding-top: 140px;
-padding-bottom: 180px; 
-margin: auto;
+.hero .container {
+    background-color: var(--primary-light-purple-2);
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 180px;
+    margin: auto;
 }
 
-.hero .row{
+.hero .row {
     align-items: center;
     gap: 10px;
 }
 
-.hero .left-hero button{
+.hero .left-hero button {
     border: none;
     padding: 16px 30px;
     color: white;
@@ -183,7 +183,7 @@ margin: auto;
     margin-top: 10px;
 }
 
-.hero .left-hero{
+.hero .left-hero {
     width: calc((100% - 100px)/2);
 }
 
@@ -201,10 +201,60 @@ margin: auto;
     width: calc((100% - 100px)/2);
 }
 
-.hero .right-hero img{
+.hero .right-hero img {
     width: 120%;
     height: 120%;
 }
+
+/* ========================= shopix offer section ================================= */
+
+.shopix-offer .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shopix-offer .col {
+    gap: 55px
+}
+
+.shopix-offer .container .top-section {
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+}
+
+.shopix-offer .service-items {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px 25px;
+    box-shadow: -2px 4px 10px rgb(49 32 138/5%);
+    gap: 20px
+}
+
+.shopix-offer .bottom-section img {
+    width: 30%;
+    height: 30%;
+}
+
+.shopix-offer .bottom-section p {
+    font-size: 16px;
+    opacity: 80%;
+}
+
+.shopix-offer .bottom-section h3 {
+    font-size: 20px;
+}
+
+.shopix-offer .bottom-section {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
@@ -251,19 +301,19 @@ margin: auto;
         gap: 70px;
     }
 
-    .hero .row{
+    .hero .row {
         display: flex;
         flex-direction: column;
     }
 
-    .hero .right-hero img{
+    .hero .right-hero img {
         width: 100%;
         height: 100%;
         padding: 0;
         margin: auto;
     }
 
-    .hero .container{
+    .hero .container {
         padding-top: 150px;
         padding-left: 50px;
         padding-right: 50px;
@@ -278,9 +328,29 @@ margin: auto;
         width: 100%;
     }
 
-    .hero .row{
+    .hero .row {
         gap: 50px;
     }
 
-   
+    .shopix-offer .bottom-section {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+    .shopix-offer .service-items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: -2px 4px 10px rgb(49 32 138 / 5%);
+    }
+
+
+
 }

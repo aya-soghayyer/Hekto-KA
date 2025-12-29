@@ -8,23 +8,26 @@
     --primary-pink: #FB2E86;
     --primary-mid-gray: #8A8FB9;
     --primary-level-black:  #0D0E43;
+    --primary-navy-blue:#151875;
+    --primary-gray2:#1A0B5B4D;
 }
 
 .capitalize {
     text-transform: capitalize;
 }
 
-.row {
-    display: flex;
-    /* align-items: stretch; */
+.text-navy-blue{
+    color: var(--primary-navy-blue);
 }
 
-/* .col {
-    display: flexbox;
-    justify-content: space-between;
-    margin: 50px;
+.row {
+    display: flex;
+}
 
-} */
+.col {
+    display: flex;
+    flex-direction: column;
+}
 
 .text-black{
     color: var(--primary-level-black)
@@ -35,6 +38,10 @@
 
 .text-gray {
     color: var(--primary-mid-gray)
+}
+
+.text-gray2 {
+    color: var(--primary-gray2)
 }
 
 .bg-pink {
@@ -53,10 +60,23 @@
     font-style: normal;
 }
 
+.lato-bold-700 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .josefin-sans-bold-600 {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    font-style: normal;
+}
+
+.josefin-sans-bold-700 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
