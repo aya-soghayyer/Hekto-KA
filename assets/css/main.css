@@ -291,6 +291,84 @@ hero {
     line-height: 50px;
 }
 
+/* ========================= blog section ================================= */
+
+.blog .blogs-items {
+    width: 30%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0px;
+    box-shadow: -2px 4px 10px rgb(49 32 138/5%);
+    gap: 20px
+}
+
+.blog .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.blog .top-section p{
+    font-size: 30px;
+}
+.blog .bottom-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.blog .container .top-section {
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+}
+
+.blog a {
+    text-align: start;
+    text-underline-offset: 3px;
+}
+
+.blog a:hover {
+    color: var(--primary-pink)
+}
+
+.blog .bloger-name {
+    gap: 6px;
+    display: flex;
+}
+
+.blog .date{
+    gap: 10px;
+    display: flex;
+}
+
+.blog .details .row{
+    gap: 30px;
+}
+
+.blog .details img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog .bloger-name, .blog .date{
+    font-size: 13px;
+}
+
+.blog .details {
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+.blog h3:hover {
+    color: var(--primary-pink);
+    cursor: pointer;
+}
+
+.blog .bottom-section{
+    justify-content: space-between;
+}
+
 /* ========================= media query section ================================= */
 
 @media screen and (min-width:0) and (max-width:650px) {
@@ -397,7 +475,33 @@ hero {
         align-items: center;
         margin: auto;
     }
-    
+
+    .blog .bottom-section{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog .blogs-items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 45px 0px;
+        box-shadow: -2px 4px 10px rgb(49 32 138 / 5%);
+        gap: 20px;
+    }
+
+    .blog .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog .intro img{
+       width: 10px;
+    }
 
 
 }

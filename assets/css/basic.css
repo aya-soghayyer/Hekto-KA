@@ -10,6 +10,7 @@
     --primary-level-black:  #0D0E43;
     --primary-navy-blue:#151875;
     --primary-gray2:#1A0B5B4D;
+    --primary-gray3: #72718F;
 }
 
 .capitalize {
@@ -29,6 +30,10 @@
     flex-direction: column;
 }
 
+.text-gray3 {
+    color: var(--primary-gray3);
+}
+
 .text-black{
     color: var(--primary-level-black)
 }
@@ -46,6 +51,18 @@
 
 .bg-pink {
     background-color: var(--primary-pink);
+}
+
+.lato-200 {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.lato-300 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .lato-regular {
