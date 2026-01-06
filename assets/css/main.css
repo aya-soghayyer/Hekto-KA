@@ -35,6 +35,7 @@ li a {
     top: 0;
     background-color: white;
     width: 100%;
+    z-index: 1;
 }
 
 .nav ul {
@@ -305,6 +306,75 @@ hero {
     justify-content: space-around;    
 }
 
+/* ========================= top categories section ================================= */
+
+.categories .product-items {
+    width: 30%;
+    /* height: 28%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.categories .product-items button{
+    display: none;
+}
+
+.categories .product-items:hover button{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 170px;
+    background-color: var(--primary-green);
+    border: 0;
+    padding: 8px 13px;
+    color: white;
+    border-radius: 2px;
+}
+
+.categories .price {
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.categories .top-section p{
+    font-size: 30px;
+}
+
+.categories .bottom-section img {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: var(--primary-navy-blue-opacity-5);
+    padding: 40px;
+    box-shadow: -2px 4px 10px rgb(49 32 138/5%);
+}
+
+.categories .bottom-section img:hover{
+    box-shadow: -6px 6px 1px var(--primary-navy-blue);
+    cursor: pointer;
+}
+
+.categories .bottom-section .details {
+    gap: 5px;
+}
+
+.categories .container .top-section {
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+}
+
+.categories .container {
+    padding-bottom: 120px;
+}
+
+.categories .bottom-section {
+    padding-top: 30px;
+    justify-content: space-around;    
+}
+
 /* ========================= subscribe section ================================= */
 
 .subscribe{
@@ -571,6 +641,37 @@ hero {
         box-shadow: -2px 4px 10px rgb(49 32 138/5%);
         gap: 20px;
         padding-bottom: 20px;
+    }
+
+    .categories .bottom-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .categories .product-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -2px 4px 10px rgb(49 32 138/5%);
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .categories .product-items:hover button{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top:220px;
+        background-color: var(--primary-green);
+        border: 0;
+        padding: 8px 13px;
+        color: white;
+        border-radius: 2px;
     }
 
 }
