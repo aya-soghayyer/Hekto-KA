@@ -207,10 +207,158 @@ hero {
     height: 120%;
 }
 
+/* ========================= featured products section ================================= */
+
+.featured .product-items {
+    width: 24%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: var(--primary-navy-blue-opacity-5); */
+    /* gap: 20px; */
+    /* padding-bottom: 20px; */
+}
+
+.featured .product-items button{
+    display: none;
+}
+
+.featured .product-items:hover button{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    bottom: 140px;
+    background-color: var(--primary-green);
+    border: 0;
+    padding: 8px 13px;
+    color: white;
+    border-radius: 2px;
+}
+
+.featured .bottom-section img{
+
+}
+
+.featured .product-items:hover .icon{
+    background-color: var(--primary-gray);
+}
+
+.featured .product-items:hover .icons{
+    display: inline-flex;
+}
+
+.featured .price {
+    font-size: 14px;
+}
+
+.featured .top-section p{
+    font-size: 30px;
+}
+
+.featured .bottom-section img:not(.resize, .resize2) {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-navy-blue-opacity-5);
+}
+
+.featured .bottom-section .resize{
+    width: 86%;
+    height: 100%;
+    background-color: var(--primary-navy-blue-opacity-5);
+
+}
+
+.featured .bottom-section .resize2{
+    width: 100%;
+    /* height: 600%; */
+    align-items: center;
+    padding: 38px 0;
+    background-color: var(--primary-navy-blue-opacity-5);
+}
+
+.featured .bottom-section:hover img{
+    background-color: var(--primary-gray);
+    cursor: pointer;
+}
+
+.featured .product-items:hover{
+    background-color: var(--primary-gray);
+    cursor: pointer;
+}
+
+.featured .color{
+    width: 14px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.featured .colors{
+   gap: 5px;
+   justify-content: center;
+}
+
+.featured .icons{
+    position: absolute;
+    left: 3px;
+    gap: 14px;
+    justify-content: center;
+    display: none;
+ }
+
+ .featured .icon{
+    cursor: pointer;
+    border-radius: 100%;
+ }
+
+.featured .bottom-section .details {
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.featured .product-items:hover .details {
+    background-color: var(--primary-dark-blue);
+    cursor: pointer;
+}
+
+.featured .product-items:hover .details .bg-dark-blue{
+    background-color: var(--primary-yellow);
+}
+
+.featured .product-items:hover .details .code{
+    color: white;
+    font-weight:900;
+    -webkit-text-stroke: 0.05rem black;
+}
+
+.featured .product-items:hover .details .price p , .featured .product-items:hover .details .title {
+    color: white;
+}
+
+.featured .container .top-section {
+    display: flex;
+    font-size: 42px;
+    justify-content: center;
+}
+
+.featured  .container {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+
+.featured .bottom-section {
+    padding-top: 30px;
+    justify-content: space-around;    
+}
+
 /* ========================= shopix offer section ================================= */
 
 .shopix-offer .container {
-    padding-top: 120px;
+    padding-top: 30px;
     padding-bottom: 120px;
 }
 
@@ -667,6 +815,37 @@ hero {
         position: absolute;
         cursor: pointer;
         top:220px;
+        background-color: var(--primary-green);
+        border: 0;
+        padding: 8px 13px;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .featured .bottom-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .featured .product-items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: -2px 4px 10px rgb(49 32 138/5%);
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .featured .product-items:hover button{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        /* top:160px; */
         background-color: var(--primary-green);
         border: 0;
         padding: 8px 13px;

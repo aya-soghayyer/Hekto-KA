@@ -5,7 +5,7 @@
     --primary-light-purple: #EEEFFB;
     --primary-light-purple-2: #F2F0FF;
     --primary-line-light-purple: #E7E6EF;
-    --primary-pink: #FB2E86;
+    --primary-pink: #FB2E86; 
     --primary-mid-gray: #8A8FB9;
     --primary-level-black:  #0D0E43;
     --primary-navy-blue:#151875;
@@ -15,10 +15,30 @@
     --primary-navy-blue-opacity-5: rgb(49 32 138/5%);
     --primary-navy-blue-opacity-30:rgb(21 24 117/30%);
     --primary-green:#08D15F;
+    --primary-dark-blue:#00009D;
+    --primary-pinky-red:#F701A8;
+    --primary-green2:#05E6B7;
+    --primary-yellow:#FFEAC1;
 }
 
 .capitalize {
     text-transform: capitalize;
+}
+
+.bg-green2{
+   background-color: var(--primary-green2);
+}
+
+.bg-pinky-red {
+    background-color: var(--primary-pinky-red);
+}
+
+.bg-dark-blue {
+    background-color: var(--primary-dark-blue);
+}
+
+.bg-yellow {
+    background-color: var(--primary-yellow);
 }
 
 .text-navy-blue{
@@ -29,8 +49,12 @@
     color: var(--primary-navy-blue-opacity-30);
 }
 
-bg-navy-blue-opacity-5{
+.bg-navy-blue-opacity-5{
     color: var(--primary-navy-blue-opacity-5)
+}
+
+.box-shadow{
+    box-shadow: 1px 1px 8px var(--primary-gray2) ;
 }
 
 .bg-gray4{
