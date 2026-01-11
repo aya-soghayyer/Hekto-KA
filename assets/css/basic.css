@@ -17,12 +17,18 @@
     --primary-green:#08D15F;
     --primary-dark-blue:#00009D;
     --primary-pinky-red:#F701A8;
+    --primary-red: #FB2448;
     --primary-green2:#05E6B7;
     --primary-yellow:#FFEAC1;
+    --primary-blue: #3F509E;
 }
 
 .capitalize {
     text-transform: capitalize;
+}
+
+.text-red{
+    color: var(--primary-red);
 }
 
 .bg-green2{
